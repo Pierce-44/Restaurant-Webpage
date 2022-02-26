@@ -1,0 +1,273 @@
+@font-face {
+    font-family: myFont;
+    src: url(Raleway-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+    color: white;
+    font-family: myFont;
+    min-width: fit-content;
+    background-color: #181818;
+}
+
+p {
+    margin: 0px;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(255, 34, 34);
+    /* box-shadow: 0px 1px 4px 0px rgb(255, 255, 255);  */
+}
+
+#headerLeft {
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+#headerRight {
+    display: flex;
+    gap: 5px;
+    padding-right: 30px;
+    font-size: 12px;
+}
+
+#headerRight img {
+    padding-left: 30px;
+}
+
+#headerRight p {
+    margin: auto;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.logosSM, .logosHeaderRight {
+    height: 20px;
+    width: auto;
+}
+
+:hover.logosSM {
+    transform: scale(1.3);
+}
+
+
+/* sub header */
+
+#subHeader {
+    display: flex;
+    align-items: center;
+    background-color: rgb(7, 7, 7);
+    height: 110px;
+}
+
+#pizzaLogo {
+    height: 100px;
+    width: auto;
+    margin-left: 30px;
+    margin-top: 5px;
+    padding-right: 50px;
+}
+
+#subMenu, .divSubMenu1, .divSubMenu2, .divSubMenu3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subMenu {
+    gap: 50px;
+    cursor: pointer;
+}
+
+.divSubMenu1 p, .divSubMenu1 img {
+    border-width: 2px;
+    border-bottom: solid white;
+}
+
+.subMenuText {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+:hover.divSubMenu1, :hover.divSubMenu2, :hover.divSubMenu3 {
+    padding-bottom: 20px;
+}
+
+.arrowIMG {
+    height:35px;
+    width: auto;
+}
+
+#logo, #divEmpty {
+    flex: 1;
+}
+
+/* main body */
+
+#mainBody {
+    background-image: url(./images/pizza.jpg);
+    /* background-attachment: fixed; */
+    background-position: right top;
+    background-size: cover;
+    height: calc(100vh - 150px );
+    width: 100%;
+}
+
+#mainBodyDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 600px;
+    height: 100%;
+    padding-left: 10vw;
+}
+
+#upperText {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#midText {
+    color: yellow;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#lowerDiv {
+    display: flex;
+    gap: 10px;
+}
+
+#buttonDIV {
+    display: flex;
+    gap: 10px;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(255, 34, 34);
+    border: 0px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+:hover#buttonDIV {
+    transform: scale(1.2);
+}
+
+#buttonDIV img {
+    height: 25px;
+    width: auto;
+}
+
+#price1 {
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#price2 {
+    text-decoration-line: line-through;
+    align-self: center;
+}
+
+/* contact page */
+
+#contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+}
+
+.contactText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactText img {
+    height: 30px;
+    width: auto;
+}
+
+.contactMapImg {
+    height: auto;
+    width: 35vw;
+    min-width: 300px;
+}
+
+#contactDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgb(7, 7, 7);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* menu page */
+
+#menuContainer {
+    /* max-width: 700px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 150px);
+}
+
+#gridDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    /* background-color: rgb(255, 34, 34); */
+    background-color: rgb(7, 7, 7);
+    /* border-radius: 15px; */
+}
+
+.pizzaDiv {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(7, 7, 7); */
+    background-color: rgb(255, 34, 34);
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+:hover.pizzaDiv {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px white;
+}
+
+.pizzaDiv h2, .pizzaDiv p {
+    text-align: center;
+}
+
+.pizzaDiv h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    /* text-decoration: underline; */
+}
